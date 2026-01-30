@@ -1,28 +1,23 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
-// Ini adalah halaman utama (Landing Page) Cahaya Tasbih
-export default function HomePage() {
+// Iki halaman utama Cahaya Tasbih
+export default function App() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Menampilkan Navigasi */}
+    <div className="min-h-screen bg-white font-sans">
       <Navbar />
-      
-      {/* Menampilkan Bagian Utama / Sambutan */}
       <Hero />
-
-      {/* Bagian untuk Unit Pendidikan atau Berita bisa ditambah di sini nanti */}
-      <section className="py-16 px-4 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 text-emerald-800">
-          Unit Pendidikan & Pondok Pesantren
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Komponen Unit akan muncul di sini secara otomatis dari database */}
-          <p className="text-center col-span-full text-gray-500">
-            Selamat Datang di Portal Resmi Cahaya Tasbih.
+      
+      <section className="py-20 bg-emerald-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-emerald-900 mb-4">
+            Selamat Datang di Pondok Pesantren Cahaya Tasbih
+          </h2>
+          <p className="text-emerald-700 text-lg">
+            Membentuk Generasi Qur'ani, Berakhlak Mulia, dan Berwawasan Luas.
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
